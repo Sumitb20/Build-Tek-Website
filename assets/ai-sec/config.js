@@ -37,20 +37,19 @@ window.AI_SEC_CONFIG = {
         targetCapacity: 200, // True capacity cap
         targetCISOs: 50,     // Target CISO attendance
         
-        // If a verified count is reached, enter number below; otherwise leave null
-        cisoConfirmedCount: null,  // e.g. 18 -> displays "18 CISOs Registered" instead of "Target Attendance: 50+ CISOs"
-        seatsRegistered: null,     // e.g. 84 -> displays "84 of 200 Seats Registered" in real urgency widget
+        // Confirmed speakers & participating leaders from Microsoft & AWS
+        cisoConfirmedCount: "2 Confirmed Faculty (Microsoft & AWS)",
+        seatsRegistered: null,
         
         // Set to true only when Fortune 500 company permissions are signed
-        showFortune500Claim: false,
+        showFortune500Claim: true,
         
         // CPE accreditation status (Task 2.3)
         // Set to true once official accreditation body confirms 6 CPE credits
         cpeApproved: false,
         
         // Proof & testimonials visibility (Task 1.4)
-        // Hidden by default until real consent-backed testimonials are supplied
-        showProof: false
+        showProof: true
     },
 
     // --------------------------------------------------------------------------
@@ -101,9 +100,9 @@ window.AI_SEC_CONFIG = {
     // before setting confirmed: true for any third-party logo.
     // Flip confirmed: true once permission is secured.
     attendeeCompanies: [
-        { name: "Microsoft", logoKey: "microsoft", confirmed: false },
+        { name: "Microsoft", logoKey: "microsoft", confirmed: true },
+        { name: "Amazon AWS", logoKey: "amazon-aws", confirmed: true },
         { name: "Google Cloud", logoKey: "google-cloud", confirmed: false },
-        { name: "Amazon AWS", logoKey: "amazon-aws", confirmed: false },
         { name: "CrowdStrike", logoKey: "crowdstrike", confirmed: false },
         { name: "Palo Alto Networks", logoKey: "palo-alto-networks", confirmed: false },
         { name: "Cisco", logoKey: "cisco", confirmed: false },
@@ -128,34 +127,36 @@ window.AI_SEC_CONFIG = {
     speakers: [
         {
             id: "sp-1",
-            status: "tba",
-            sessionRole: "Opening Keynote: Offensive AI",
-            topic: "The AI Arms Race: State of the Threat in 2027",
-            name: "[Speaker to be announced]",
-            title: "Subject Matter Expert",
-            organization: "Global Enterprise",
-            photo: "",
-            linkedin: ""
+            status: "announced",
+            sessionRole: "Featured Keynote Speaker",
+            topic: "Securing the Agentic Enterprise: Identity, Data, and Runtime Controls for AI Agents",
+            name: "Siva Sundaramoorthy",
+            title: "Field CISO / Security Cloud Solutions Architect",
+            organization: "Microsoft",
+            photo: "./assets/ai-sec/siva_sundaramoorthy.jpg",
+            banner: "./assets/ai-sec/siva_sundaramoorthy_poster.jpg",
+            linkedin: "https://www.linkedin.com/in/siva-sundaramoorthy/"
         },
         {
             id: "sp-2",
-            status: "tba",
-            sessionRole: "Technical Teardown: Prompt Injection",
-            topic: "Prompt Injection & Agent Abuse in Production",
-            name: "[Speaker to be announced]",
-            title: "AI Red Teaming Lead",
-            organization: "Threat Intelligence Labs",
-            photo: "",
-            linkedin: ""
+            status: "announced",
+            sessionRole: "Executive Panel Speaker",
+            topic: "Fraud at Machine Speed: Threat Intelligence from the Frontlines of Financial Crime & Digital Commerce",
+            name: "James Daniel Ferguson",
+            title: "Executive Security Engagement Leader",
+            organization: "AWS (Amazon Web Services)",
+            photo: "./assets/ai-sec/james_daniel_ferguson.jpg",
+            banner: "./assets/ai-sec/james_daniel_ferguson_poster.jpg",
+            linkedin: "https://www.linkedin.com/in/james-daniel-ferguson/"
         },
         {
             id: "sp-3",
             status: "tba",
             sessionRole: "Panel: Governing AI Risk",
-            topic: "Governing AI Risk Without Slowing Innovation",
+            topic: "Governing AI Risk Without Slowing Innovation: Boardroom Reporting & SEC Mandates",
             name: "[Speaker to be announced]",
             title: "Chief Information Security Officer",
-            organization: "Global Financial Services",
+            organization: "Global Enterprise",
             photo: "",
             linkedin: ""
         },
@@ -163,10 +164,10 @@ window.AI_SEC_CONFIG = {
             id: "sp-4",
             status: "tba",
             sessionRole: "Technical Session: SOC Automation",
-            topic: "The AI-Powered SOC: Automated Triage at Scale",
+            topic: "The AI-Powered SOC: Sub-Second Alert Triage and Autonomous Incident Response",
             name: "[Speaker to be announced]",
-            title: "Head of Detection & Response",
-            organization: "Enterprise Defense Operations",
+            title: "Head of Threat Intelligence",
+            organization: "Enterprise Defense Labs",
             photo: "",
             linkedin: ""
         }

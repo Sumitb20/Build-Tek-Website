@@ -373,18 +373,22 @@
         if (speakersContainer && CFG.speakers && CFG.speakers.length > 0) {
             speakersContainer.innerHTML = CFG.speakers.map(sp => {
                 if (sp.status === 'announced' && sp.name) {
+                    const tagStyle = sp.organization && sp.organization.includes('Microsoft') 
+                        ? 'background: rgba(239, 68, 68, 0.15); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.4);'
+                        : 'background: rgba(0, 240, 255, 0.15); color: #00f0ff; border: 1px solid rgba(0, 240, 255, 0.4);';
                     return `
                         <div class="speaker-card speaker-announced">
                             <div class="speaker-avatar">
                                 ${sp.photo ? `<img src="${sp.photo}" alt="${sp.name}" loading="lazy" decoding="async">` : `<div class="avatar-placeholder">${sp.name.charAt(0)}</div>`}
                             </div>
-                            <span class="speaker-announced-tag">ANNOUNCED FACULTY</span>
-                            <h4>${sp.name}</h4>
-                            <span class="speaker-role">${sp.title}, ${sp.organization}</span>
-                            <p class="speaker-topic"><strong>Topic:</strong> ${sp.topic}</p>
+                            <span class="speaker-announced-tag" style="${tagStyle}">${sp.sessionRole || 'CONFIRMED FACULTY'}</span>
+                            <h4 style="font-size: 1.25rem; margin: 0.5rem 0 0.2rem; color: #fff;">${sp.name}</h4>
+                            <span class="speaker-role" style="color: #00f0ff; font-weight: 500;">${sp.title}, <strong>${sp.organization}</strong></span>
+                            <p class="speaker-topic" style="margin-top: 0.6rem; font-size: 0.88rem; color: #cbd5e1;"><strong>Topic:</strong> ${sp.topic}</p>
                             ${sp.linkedin ? `
-                                <a href="${sp.linkedin}" target="_blank" rel="noopener noreferrer" class="speaker-li-link" aria-label="${sp.name} LinkedIn Profile">
+                                <a href="${sp.linkedin}" target="_blank" rel="noopener noreferrer" class="speaker-li-link" aria-label="${sp.name} LinkedIn Profile" style="margin-top: 0.5rem; display: inline-flex; align-items: center; gap: 4px; color: #00f0ff; font-size: 0.8rem;">
                                     <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                                    <span>LinkedIn</span>
                                 </a>` : ''}
                         </div>
                     `;
@@ -414,8 +418,9 @@
             
             if (confirmedCompanies.length > 0) {
                 logoWallContainer.innerHTML = confirmedCompanies.map(c => `
-                    <div class="company-logo-card" title="${c.name}">
-                        <span class="logo-name">${c.name}</span>
+                    <div class="company-logo-card" title="${c.name}" style="padding: 12px 24px; background: rgba(255,255,255,0.04); border: 1px solid rgba(0,240,255,0.25); border-radius: 8px; display: inline-flex; align-items: center; gap: 10px;">
+                        ${c.logoKey ? `<img src="./assets/ai-sec/brands/${c.logoKey}.png" alt="${c.name}" style="height: 22px; width: auto; object-fit: contain; filter: brightness(0) invert(1);" onerror="this.style.display='none'">` : ''}
+                        <span class="logo-name" style="font-weight: 600; color: #fff; font-size: 0.95rem;">${c.name}</span>
                     </div>
                 `).join('');
                 if (logoWallSection) logoWallSection.style.display = 'block';
