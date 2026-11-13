@@ -1,0 +1,456 @@
+/* ============================================================
+   PHARMA VISTA GLOBAL SUMMIT 2026 — Editorial Agenda
+   Design system: Deep Emerald / Medical Teal / Medical Cyan
+   Typography: Playfair Display + Inter + Space Grotesk
+   ============================================================ */
+
+:root {
+  --emerald: #00695C;
+  --teal: #0F9D8A;
+  --cyan: #20C5D8;
+  --bg: #F6F8F9;
+  --ink: #1C1C1C;
+  --muted: #8FA7A5;
+  --white: #FFFFFF;
+
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', -apple-system, sans-serif;
+  --font-mono: 'Space Grotesk', sans-serif;
+
+  --page-w: 210mm;
+  --page-h: 297mm;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ============================================================
+   PAGE FRAME
+   ============================================================ */
+
+.page {
+  position: relative;
+  width: var(--page-w);
+  height: var(--page-h);
+  margin: 0 auto;
+  background: var(--white);
+  overflow: hidden;
+  page-break-after: always;
+  break-after: page;
+  display: flex;
+  flex-direction: column;
+}
+
+.page:last-child { page-break-after: auto; }
+
+.page-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.page-content {
+  position: relative;
+  z-index: 2;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ============================================================
+   SHARED TYPOGRAPHY
+   ============================================================ */
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--teal);
+}
+
+.hairline {
+  height: 1px;
+  background: linear-gradient(90deg, var(--emerald), transparent);
+  opacity: 0.35;
+}
+
+/* ============================================================
+   PAGE 1 — COVER
+   ============================================================ */
+
+.cover {
+  padding: 16mm 16mm;
+}
+
+.cover-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.cover-brand {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+.cover-brand span {
+  display: block;
+  color: var(--muted);
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  margin-top: 2px;
+  font-size: 9.5px;
+}
+
+.cover-summit-tag {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--teal);
+  text-align: right;
+}
+
+.cover-center {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 0;
+}
+
+.cover-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 0.92;
+  color: var(--ink);
+  font-size: clamp(64px, 13vw, 108px);
+  letter-spacing: -0.01em;
+}
+
+.cover-title .accent {
+  color: var(--emerald);
+  font-style: italic;
+}
+
+.cover-sub {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--ink);
+  font-size: clamp(15px, 2.6vw, 22px);
+  margin-top: 18px;
+}
+
+.cover-sub-year {
+  color: var(--teal);
+}
+
+.cover-tagline {
+  margin-top: 34px;
+  font-family: var(--font-body);
+  font-size: 13.5px;
+  color: var(--muted);
+  max-width: 420px;
+}
+
+.cover-pillars {
+  margin-top: 26px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 14px;
+  max-width: 460px;
+}
+
+.pillar-chip {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--emerald);
+  border: 1px solid rgba(0,105,92,0.28);
+  border-radius: 999px;
+  padding: 6px 14px;
+  white-space: nowrap;
+}
+
+.cover-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 8mm;
+}
+
+.cover-date-block {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cover-date-block .big {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.cover-date-block .small {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+
+.cover-url {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  letter-spacing: 0.05em;
+  color: var(--teal);
+  text-align: right;
+}
+
+/* ============================================================
+   PAGE 2 — EDITORIAL TIMELINE
+   ============================================================ */
+
+.timeline-page {
+  padding: 14mm 14mm 10mm;
+}
+
+.timeline-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 6mm;
+}
+
+.timeline-title {
+  font-family: var(--font-display);
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.timeline-title .accent { color: var(--emerald); font-style: italic; }
+
+.timeline-meta {
+  text-align: right;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  text-transform: uppercase;
+}
+
+.timeline-track {
+  position: relative;
+  flex: 1;
+}
+
+.hour-marks {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+.hour-mark {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 76px;
+  line-height: 1;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--emerald);
+  opacity: 0.09;
+  letter-spacing: -0.02em;
+}
+
+.hour-mark.right { text-align: right; }
+
+.cards-col {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 5mm;
+}
+
+.tl-card {
+  width: 62%;
+  background: rgba(255,255,255,0.86);
+  backdrop-filter: blur(18px);
+  border-radius: 20px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.06);
+  border: 1px solid rgba(0,105,92,0.08);
+  padding: 10px 16px 12px;
+}
+
+.tl-card.left { align-self: flex-start; margin-left: 2%; }
+.tl-card.right { align-self: flex-end; margin-right: 2%; text-align: right; }
+
+.tl-card.minor {
+  width: 44%;
+  padding: 7px 14px 8px;
+  opacity: 0.92;
+}
+
+.tl-tag {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--teal);
+}
+
+.tl-time {
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+.tl-titlerow {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--ink);
+  margin-top: 4px;
+  line-height: 1.15;
+}
+
+.tl-detail {
+  font-family: var(--font-body);
+  font-size: 10.5px;
+  color: var(--muted);
+  margin-top: 3px;
+}
+
+.tl-card.partner {
+  border: 1px dashed rgba(0,105,92,0.4);
+  background: rgba(246,248,249,0.7);
+}
+
+.tl-card.partner .tl-tag { color: var(--emerald); }
+
+/* ============================================================
+   PAGE 3 — THANK YOU
+   ============================================================ */
+
+.closing {
+  padding: 16mm;
+  display: flex;
+  flex-direction: column;
+}
+
+.closing-center {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.closing-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(70px, 14vw, 120px);
+  line-height: 0.9;
+  color: var(--ink);
+}
+
+.closing-title .accent { color: var(--emerald); font-style: italic; }
+
+.closing-sub {
+  margin-top: 22px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  text-transform: uppercase;
+}
+
+.closing-sub strong {
+  color: var(--emerald);
+  font-weight: 700;
+}
+
+.closing-qr {
+  margin-top: 40px;
+}
+
+.closing-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 10mm;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.footer-col .label {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.footer-col .value {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.footer-org {
+  text-align: right;
+}
+
+/* ============================================================
+   PRINT
+   ============================================================ */
+
+@page {
+  size: A4 portrait;
+  margin: 0;
+}
+
+@media print {
+  html, body { background: var(--white); }
+  .page { box-shadow: none; margin: 0; }
+  .screen-only { display: none !important; }
+}
+
+@media screen {
+  body { padding: 24px 0; }
+  .page {
+    box-shadow: 0 30px 80px rgba(0,0,0,0.12);
+    margin-bottom: 24px;
+    border-radius: 4px;
+  }
+}

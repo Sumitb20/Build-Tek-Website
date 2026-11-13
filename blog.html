@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research &amp; Insights — AI Security, Pharma Leadership | BuildTek Events</title>
+  <meta name="description" content="In-depth research from BuildTek Events — AI security threat analysis, LLM red teaming, MCP attack surfaces, pharma leadership, patent strategy, supply chain resilience, Pharma 4.0, and regulatory compliance." />
+  <link rel="canonical" href="https://buildtek.in/blog.html" />
+
+  <meta property="og:title" content="Research &amp; Insights — AI Security, Pharma Leadership | BuildTek Events" />
+  <meta property="og:description" content="AI security threat intelligence, LLM red teaming guides, pharma leadership insights, patent strategy, Pharma 4.0, and regulatory compliance from BuildTek's research desk." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://buildtek.in/blog.html" />
+  <meta property="og:image" content="https://buildtek.in/assets/og/buildtek-og.jpg" />
+  <meta property="og:site_name" content="BuildTek Events" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Research &amp; Insights — AI Security, Pharma | BuildTek Events" />
+  <meta name="twitter:image" content="https://buildtek.in/assets/og/buildtek-og.jpg" />
+  <meta name="robots" content="index, follow" />
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HJL88YELRT"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-HJL88YELRT');</script>
+
+  <link rel="icon" type="image/svg+xml" href="assets/ai-sec/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Research & Insights — AI Security, Pharma Leadership | BuildTek Events",
+    "url": "https://buildtek.in/blog.html",
+    "description": "AI security threat analysis, LLM red teaming, pharma leadership articles on patent strategy, AI drug discovery, supply chain, and regulatory compliance.",
+    "publisher": { "@type": "Organization", "name": "BuildTek Events", "url": "https://buildtek.in" }
+  }
+  </script>
+
+  <style>
+    :root {
+      --ink: #050409; --ink2: #0d0b1a;
+      --gold: #D4AF37; --gold-light: #F3E5AB;
+      --muted: #8F8C99;
+      --font-display: 'Playfair Display', serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+      --radius: 14px; --radius-lg: 22px; --radius-pill: 999px;
+    }
+    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font-body); background: var(--ink); color: #fff; overflow-x: hidden; }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; }
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:0.01ms!important;transition-duration:0.01ms!important}}
+
+    /* HEADER */
+    header {
+      position: fixed; top: 0; width: 100%; z-index: 100;
+      padding: 1.2rem 2.5rem; display: flex; justify-content: space-between; align-items: center;
+      background: rgba(5,4,9,0.92); backdrop-filter: blur(24px);
+      border-bottom: 1px solid rgba(212,175,55,0.1);
+    }
+    .logo-img { height: 40px; width: auto; border-radius: 6px; }
+    .back-btn { display:inline-flex;align-items:center;gap:0.5rem;font-size:0.7rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,0.55);transition:color 0.3s; }
+    .back-btn:hover { color: var(--gold-light); }
+
+    /* PAGE HERO */
+    .page-hero {
+      padding: 10rem 2.5rem 5rem;
+      max-width: 900px; margin: 0 auto; text-align: center;
+    }
+    .pill {
+      display:inline-flex;align-items:center;gap:0.6rem;
+      background:rgba(212,175,55,0.07);border:1px solid rgba(212,175,55,0.2);
+      border-radius:var(--radius-pill);padding:0.35rem 1.1rem;
+      font-size:0.6rem;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;
+      color:var(--gold-light);margin-bottom:1.2rem;
+    }
+    .page-h1 {
+      font-family: var(--font-display); font-size: clamp(2.5rem,5vw,4.5rem);
+      text-transform: uppercase; line-height: 0.95; color: #fff; margin-bottom: 1.5rem;
+    }
+    .page-h1 span { color: var(--gold-light); }
+    .page-sub { font-size: 1rem; color: rgba(255,255,255,0.55); line-height: 1.85; max-width: 620px; margin: 0 auto; }
+
+    /* FILTERS */
+    .filters {
+      display: flex; justify-content: center; flex-wrap: wrap; gap: 0.6rem;
+      padding: 0 2.5rem 3rem; margin-top: 2rem;
+    }
+    .filter-btn {
+      font-size: 0.64rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;
+      padding: 0.5rem 1.2rem; border-radius: var(--radius-pill);
+      border: 1px solid rgba(255,255,255,0.1); background: transparent;
+      color: rgba(255,255,255,0.45); cursor: pointer; transition: all 0.3s;
+    }
+    .filter-btn.active, .filter-btn:hover {
+      border-color: rgba(212,175,55,0.4); color: var(--gold-light);
+      background: rgba(212,175,55,0.07);
+    }
+
+    /* GRID */
+    .blog-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.8rem;
+      max-width: 1440px; margin: 0 auto; padding: 0 2.5rem 6rem;
+    }
+
+    .blog-card {
+      background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.06);
+      border-radius: var(--radius-lg); overflow: hidden;
+      transition: transform 0.4s, border-color 0.4s, box-shadow 0.4s;
+      display: flex; flex-direction: column;
+    }
+    .blog-card:hover { transform: translateY(-8px); border-color: rgba(212,175,55,0.2); box-shadow: 0 24px 60px rgba(0,0,0,0.4); }
+
+    .blog-thumb { height: 210px; overflow: hidden; position: relative; }
+    .blog-thumb img { width:100%;height:100%;object-fit:cover;transition:transform 0.7s;filter:saturate(1.2) brightness(0.75); }
+    .blog-card:hover .blog-thumb img { transform: scale(1.08); }
+
+    .blog-cat {
+      position: absolute; top: 1rem; left: 1rem;
+      background: rgba(5,4,9,0.8); backdrop-filter: blur(8px);
+      border: 1px solid rgba(212,175,55,0.2);
+      border-radius: var(--radius-pill); padding: 0.28rem 0.8rem;
+      font-size: 0.56rem; font-weight: 700; letter-spacing: 1.5px;
+      text-transform: uppercase; color: var(--gold-light);
+    }
+
+    .blog-body { padding: 1.8rem; flex: 1; display: flex; flex-direction: column; }
+    .blog-card h2 {
+      font-family: var(--font-display); font-size: 1.2rem; line-height: 1.3;
+      color: #fff; margin-bottom: 0.8rem; flex: 1;
+      transition: color 0.3s;
+    }
+    .blog-card:hover h2 { color: var(--gold-light); }
+    .blog-excerpt { font-size: 0.81rem; color: rgba(255,255,255,0.45); line-height: 1.7; margin-bottom: 1.2rem; }
+    .blog-meta-row { display:flex;align-items:center;gap:1rem;font-size:0.66rem;color:rgba(255,255,255,0.3);padding-top:1rem;border-top:1px solid rgba(255,255,255,0.05);margin-top:auto; }
+    .blog-read-more { display:inline-flex;align-items:center;gap:0.4rem;font-size:0.65rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold-light);margin-top:1rem;transition:gap 0.3s; }
+    .blog-card:hover .blog-read-more { gap: 0.7rem; }
+
+    /* CTA BANNER */
+    .cta-banner {
+      background: linear-gradient(135deg,rgba(212,175,55,0.06),rgba(5,4,9,0.1));
+      border-top: 1px solid rgba(212,175,55,0.12);
+      border-bottom: 1px solid rgba(212,175,55,0.12);
+      padding: 5rem 2.5rem; text-align: center;
+    }
+    .cta-banner h3 { font-family:var(--font-display);font-size:clamp(2rem,3.5vw,3.2rem);text-transform:uppercase;color:#fff;margin-bottom:1rem; }
+    .cta-banner h3 span { color: var(--gold-light); }
+    .cta-banner p { font-size:0.95rem;color:rgba(255,255,255,0.55);line-height:1.8;max-width:540px;margin:0 auto 2rem; }
+    .btn {
+      display:inline-flex;align-items:center;gap:0.5rem;padding:0.95rem 2.2rem;
+      border-radius:var(--radius-pill);font-size:0.74rem;font-weight:700;letter-spacing:1.5px;
+      text-transform:uppercase;transition:transform 0.3s,box-shadow 0.3s;cursor:pointer;border:none;
+    }
+    .btn-gold { background:linear-gradient(135deg,#D4AF37,#F3E5AB);color:#1a1000;box-shadow:0 8px 32px rgba(212,175,55,0.35); }
+    .btn-gold:hover { transform:translateY(-3px);box-shadow:0 16px 48px rgba(212,175,55,0.55); }
+
+    /* FOOTER */
+    .mini-footer { text-align:center;padding:2.5rem;border-top:1px solid rgba(255,255,255,0.05);font-size:0.78rem;color:rgba(255,255,255,0.3); }
+    .mini-footer a { color:var(--gold-light); }
+
+    @media(max-width:1100px){.blog-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:600px){.blog-grid{grid-template-columns:1fr;padding:0 1.5rem 4rem};header{padding:1rem 1.5rem}.page-hero{padding:8rem 1.5rem 4rem}}
+  </style>
+</head>
+<body>
+  <header>
+    <a href="https://buildtek.in/" aria-label="BuildTek Home">
+      <img src="assets/ai-sec/buildtek-events-logo.jpg" alt="BuildTek Events" class="logo-img" />
+    </a>
+    <a href="https://buildtek.in/" class="back-btn"><i class="fas fa-arrow-left" aria-hidden="true"></i> BuildTek Home</a>
+  </header>
+
+  <main>
+    <div class="page-hero">
+      <div class="pill"><i class="fas fa-flask" aria-hidden="true"></i> Research Desk</div>
+      <h1 class="page-h1">Research &amp;<br><span>Intelligence</span></h1>
+      <p class="page-sub">AI security threat research, pharma leadership analysis, strategic insights, and regulatory intelligence for CISOs, pharmaceutical executives, and healthcare leaders — from BuildTek's editorial team.</p>
+    </div>
+
+    <div class="filters" role="navigation" aria-label="Blog categories">
+      <button class="filter-btn active" onclick="filterCards('all')">All Articles</button>
+      <button class="filter-btn" onclick="filterCards('cyber')">AI &amp; Cyber Risk</button>
+      <button class="filter-btn" onclick="filterCards('patent')">Patent Strategy</button>
+      <button class="filter-btn" onclick="filterCards('ai')">AI &amp; Discovery</button>
+      <button class="filter-btn" onclick="filterCards('regulatory')">Regulatory</button>
+      <button class="filter-btn" onclick="filterCards('manufacturing')">Manufacturing</button>
+      <button class="filter-btn" onclick="filterCards('supply')">Supply Chain</button>
+    </div>
+
+    <div class="blog-grid" id="blogGrid">
+
+      <article class="blog-card" data-cat="cyber" style="border-color: rgba(0,240,255,0.3); background: rgba(0, 240, 255, 0.03);">
+        <div class="blog-thumb">
+          <img src="assets/ai-sec/og-cover.jpg" alt="AI Security in 2026: Are Organizations Ready for the Next Generation of Cyber Threats?" loading="lazy" width="600" height="210" onerror="this.src='https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&q=75&fit=crop'" />
+          <span class="blog-cat" style="color: #00f0ff; border-color: rgba(0,240,255,0.4); background: rgba(3,7,18,0.85);"><i class="fas fa-shield-alt" style="margin-right: 4px;"></i> AI &amp; Cyber Risk</span>
+        </div>
+        <div class="blog-body">
+          <div style="font-size: 0.62rem; font-weight: 700; color: #00f0ff; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 0.5rem;"><i class="fas fa-bolt"></i> Featured Executive Briefing</div>
+          <h2>AI Security in 2026: Are Organizations Ready for the Next Generation of Cyber Threats?</h2>
+          <p class="blog-excerpt">Machine-speed phishing, 80-90% autonomous espionage campaigns, and weaponized AI agents. An executive analysis of AI security risks, AI governance, and the 2026 CISO defense agenda.</p>
+          <div class="blog-meta-row">
+            <span><i class="far fa-calendar" aria-hidden="true"></i> Sept 2026</span>
+            <span><i class="far fa-clock" aria-hidden="true"></i> 12 min read</span>
+          </div>
+          <a href="ai-security-2026-enterprise-readiness.html" class="blog-read-more" style="color: #00f0ff;">Read Executive Briefing <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </article>
+
+      <article class="blog-card" data-cat="cyber" style="border-color: rgba(0,240,255,0.3); background: rgba(0, 240, 255, 0.03);">
+        <div class="blog-thumb">
+          <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=600&q=75&fit=crop" alt="Model Context Protocol MCP Security Guide" loading="lazy" width="600" height="210" />
+          <span class="blog-cat" style="color: #00f0ff; border-color: rgba(0,240,255,0.4); background: rgba(3,7,18,0.85);"><i class="fas fa-network-wired" style="margin-right: 4px;"></i> MCP Security</span>
+        </div>
+        <div class="blog-body">
+          <div style="font-size: 0.62rem; font-weight: 700; color: #00f0ff; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 0.5rem;"><i class="fas fa-shield-halved"></i> Technical Guide</div>
+          <h2>Model Context Protocol (MCP) Security: Attack Surfaces &amp; Enterprise Hardening</h2>
+          <p class="blog-excerpt">How attackers hijack autonomous coding agents and LLM tools through poisoned tool schemas, indirect prompt injection, and rogue MCP servers. A 6-point CISO blueprint.</p>
+          <div class="blog-meta-row">
+            <span><i class="far fa-calendar" aria-hidden="true"></i> Sept 2026</span>
+            <span><i class="far fa-clock" aria-hidden="true"></i> 14 min read</span>
+          </div>
+          <a href="blog-01-mcp-attack-surface.html" class="blog-read-more" style="color: #00f0ff;">Read Technical Guide <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </article>
+
+      <article class="blog-card" data-cat="cyber" style="border-color: rgba(244, 63, 94, 0.3); background: rgba(244, 63, 94, 0.03);">
+        <div class="blog-thumb">
+          <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&q=75&fit=crop" alt="Enterprise LLM Red Teaming and Jailbreak Defenses" loading="lazy" width="600" height="210" />
+          <span class="blog-cat" style="color: #f43f5e; border-color: rgba(244, 63, 94, 0.4); background: rgba(3,7,18,0.85);"><i class="fas fa-bullseye" style="margin-right: 4px;"></i> Red Teaming</span>
+        </div>
+        <div class="blog-body">
+          <div style="font-size: 0.62rem; font-weight: 700; color: #f43f5e; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 0.5rem;"><i class="fas fa-skull"></i> Adversarial Playbook</div>
+          <h2>The Enterprise Guide to LLM Red Teaming: Jailbreak Defenses &amp; MITRE ATLAS</h2>
+          <p class="blog-excerpt">Systematic methodology for adversarial testing: automated fuzzing, multi-turn cognitive priming jailbreaks, and production guardrail benchmarks mapped to MITRE ATLAS.</p>
+          <div class="blog-meta-row">
+            <span><i class="far fa-calendar" aria-hidden="true"></i> Sept 2026</span>
+            <span><i class="far fa-clock" aria-hidden="true"></i> 16 min read</span>
+          </div>
+          <a href="blog-02-llm-red-teaming-framework.html" class="blog-read-more" style="color: #f43f5e;">Read Red Team Guide <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </article>
+
+      <article class="blog-card" data-cat="cyber" style="border-color: rgba(197, 160, 89, 0.35); background: rgba(197, 160, 89, 0.03);">
+        <div class="blog-thumb">
+          <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=600&q=75&fit=crop" alt="EU AI Act CISO Compliance Guide" loading="lazy" width="600" height="210" />
+          <span class="blog-cat" style="color: #c5a059; border-color: rgba(197, 160, 89, 0.4); background: rgba(3,7,18,0.85);"><i class="fas fa-scale-balanced" style="margin-right: 4px;"></i> EU AI Act</span>
+        </div>
+        <div class="blog-body">
+          <div style="font-size: 0.62rem; font-weight: 700; color: #c5a059; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 0.5rem;"><i class="fas fa-gavel"></i> Regulatory Playbook</div>
+          <h2>EU AI Act High-Risk Enforcement: The Enterprise CISO Compliance Playbook</h2>
+          <p class="blog-excerpt">Navigating Annex III classifications, Article 50 transparency obligations, and €35M fine exposure. A 7-point technical conformity audit checklist.</p>
+          <div class="blog-meta-row">
+            <span><i class="far fa-calendar" aria-hidden="true"></i> Sept 2026</span>
+            <span><i class="far fa-clock" aria-hidden="true"></i> 15 min read</span>
+          </div>
+          <a href="blog-03-eu-ai-act-ciso-guide.html" class="blog-read-more" style="color: #c5a059;">Read CISO Playbook <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </article>
+
+      <article class="blog-card" data-cat="cyber" style="border-color: rgba(168, 85, 247, 0.3); background: rgba(168, 85, 247, 0.03);">
+        <div class="blog-thumb">
+          <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600&q=75&fit=crop" alt="Agent Tool-Calling Hijacks" loading="lazy" width="600" height="210" />
+          <span class="blog-cat" style="color: #a855f7; border-color: rgba(168, 85, 247, 0.4); background: rgba(3,7,18,0.85);"><i class="fas fa-robot" style="margin-right: 4px;"></i> Agentic AI</span>
+        </div>
+        <div class="blog-body">
+          <div style="font-size: 0.62rem; font-weight: 700; color: #a855f7; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 0.5rem;"><i class="fas fa-microchip"></i> Exploit Analysis</div>
+          <h2>Agent Tool-Calling Hijacks: Preventing Silent Privilege Escalation in Autonomous AI</h2>
+          <p class="blog-excerpt">How confused deputy exploits trick autonomous AI agents into executing unauthorized tools, database writes, and external network egress. Zero-trust tool defenses.</p>
+          <div class="blog-meta-row">
+            <span><i class="far fa-calendar" aria-hidden="true"></i> Sept 2026</span>
+            <span><i class="far fa-clock" aria-hidden="true"></i> 13 min read</span>
+          </div>
+          <a href="blog-04-agent-tool-calling-hijacks.html" class="blog-read-more" style="color: #a855f7;">Read Exploit Analysis <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </article>
+
+      <article class="blog-card" data-cat="cyber" style="border-color: rgba(245, 158, 11, 0.3); background: rgba(245, 158, 11, 0.03);">
+        <div class="blog-thumb">
+          <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&q=75&fit=crop" alt="Shadow AI Enterprise DLP" loading="lazy" width="600" height="210" />
+          <span class="blog-cat" style="color: #f59e0b; border-color: rgba(245, 158, 11, 0.4); background: rgba(3,7,18,0.85);"><i class="fas fa-user-secret" style="margin-right: 4px;"></i> Shadow AI</span>
+        </div>
+        <div class="blog-body">
+          <div style="font-size: 0.62rem; font-weight: 700; color: #f59e0b; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 0.5rem;"><i class="fas fa-shield-virus"></i> Enterprise DLP</div>
+          <h2>Shadow AI &amp; Unsanctioned Models: How Rogue LLM Workflows Bypass Enterprise DLP</h2>
+          <p class="blog-excerpt">Detecting unmonitored local LLM runtimes (Ollama, LM Studio) and unvetted browser plugins that exfiltrate sensitive code beyond corporate security perimeters.</p>
+          <div class="blog-meta-row">
+            <span><i class="far fa-calendar" aria-hidden="true"></i> Sept 2026</span>
+            <span><i class="far fa-clock" aria-hidden="true"></i> 14 min read</span>
+          </div>
+          <a href="blog-05-shadow-ai-unsanctioned-models.html" class="blog-read-more" style="color: #f59e0b;">Read DLP Blueprint <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </article>
+
+      <article class="blog-card" data-cat="cyber" style="border-color: rgba(244, 63, 94, 0.35); background: rgba(244, 63, 94, 0.03);">
+        <div class="blog-thumb">
+          <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=600&q=75&fit=crop" alt="5 Historic Cybersecurity Breaches Case Studies" loading="lazy" width="600" height="210" />
+          <span class="blog-cat" style="color: #fb7185; border-color: rgba(244, 63, 94, 0.4); background: rgba(3,7,18,0.85);"><i class="fas fa-shield-halved" style="margin-right: 4px;"></i> Breach Forensics</span>
+        </div>
+        <div class="blog-body">
+          <div style="font-size: 0.62rem; font-weight: 700; color: #fb7185; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 0.5rem;"><i class="fas fa-triangle-exclamation"></i> CISO Case Studies</div>
+          <h2>5 Historic Cybersecurity Breaches: Technical Failures, Financial Fallout &amp; Modern AI Security Lessons</h2>
+          <p class="blog-excerpt">Forensic breakdown of Equifax, Capital One, MOVEit, Heartland, and Change Healthcare: $20B+ lessons, systemic failure patterns, and the OWASP LLM security controls required for modern enterprise AI.</p>
+          <div class="blog-meta-row">
+            <span><i class="far fa-calendar" aria-hidden="true"></i> Oct 2026</span>
+            <span><i class="far fa-clock" aria-hidden="true"></i> 18 min read</span>
+          </div>
+          <a href="blog-06-historic-cybersecurity-breaches-ai-security-lessons.html" class="blog-read-more" style="color: #fb7185;">Read Case Studies <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </article>
+
+      <article class="blog-card" data-cat="patent">
+        <div class="blog-thumb">
+          <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&q=75&fit=crop" alt="Patent cliff pharma 2026" loading="lazy" width="600" height="210" />
+          <span class="blog-cat">Patent Strategy</span>
+        </div>
+        <div class="blog-body">
+          <h2>Navigating the 2026 Patent Cliff: What Pharmaceutical Leaders Must Do Now</h2>
+          <p class="blog-excerpt">Blockbuster drugs worth $200B+ lose exclusivity in 2026. Here's the strategic playbook for pharma executives facing biosimilar competition and portfolio gaps.</p>
+          <div class="blog-meta-row">
+            <span><i class="far fa-calendar" aria-hidden="true"></i> Aug 17, 2026</span>
+            <span><i class="far fa-clock" aria-hidden="true"></i> 8 min read</span>
+          </div>
+          <a href="navigating-the-2026-patent-cliff-what-pharmaceutical-leaders-must-do-now.html" class="blog-read-more">Read Article <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </article>
+
+      <article class="blog-card" data-cat="ai">
+        <div class="blog-thumb">
+          <img src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=600&q=75&fit=crop" alt="AI drug discovery clinical reality" loading="lazy" width="600" height="210" />
+          <span class="blog-cat">AI &amp; Discovery</span>
+        </div>
+        <div class="blog-body">
+          <h2>AI in Drug Discovery: From Algorithms to Clinical Reality in 2026</h2>
+          <p class="blog-excerpt">AI promises to compress the drug discovery timeline from decades to years. Where is the technology actually delivering — and where is the hype still outpacing results?</p>
+          <div class="blog-meta-row">
+            <span><i class="far fa-calendar" aria-hidden="true"></i> Aug 17, 2026</span>
+            <span><i class="far fa-clock" aria-hidden="true"></i> 9 min read</span>
+          </div>
+          <a href="ai-in-drug-discovery-from-algorithms-to-clinical-reality-in-2026.html" class="blog-read-more">Read Article <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </article>
+
+      <article class="blog-card" data-cat="supply">
+        <div class="blog-thumb">
+          <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=600&q=75&fit=crop" alt="Pharma supply chain resilience" loading="lazy" width="600" height="210" />
+          <span class="blog-cat">Supply Chain</span>
+        </div>
+        <div class="blog-body">
+          <h2>Pharma Supply Chain Resilience in 2026: The Strategic Imperative No Executive Can Ignore</h2>
+          <p class="blog-excerpt">Geopolitical disruption, API concentration risk, and climate events are reshaping pharmaceutical supply chains. What resilient looks like now.</p>
+          <div class="blog-meta-row">
+            <span><i class="far fa-calendar" aria-hidden="true"></i> Aug 17, 2026</span>
+            <span><i class="far fa-clock" aria-hidden="true"></i> 7 min read</span>
+          </div>
+          <a href="pharma-supply-chain-resilience-in-2026-the-strategic-imperative-no-executive-can-ignore.html" class="blog-read-more">Read Article <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </article>
+
+      <article class="blog-card" data-cat="manufacturing">
+        <div class="blog-thumb">
+          <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=75&fit=crop" alt="Pharma 4.0 manufacturing" loading="lazy" width="600" height="210" />
+          <span class="blog-cat">Manufacturing</span>
+        </div>
+        <div class="blog-body">
+          <h2>Pharma 4.0: What It Actually Means for Pharmaceutical Manufacturing Leaders in 2026</h2>
+          <p class="blog-excerpt">Continuous manufacturing, digital twins, and AI-driven quality control — how Pharma 4.0 is moving from pilot to production floor.</p>
+          <div class="blog-meta-row">
+            <span><i class="far fa-calendar" aria-hidden="true"></i> Aug 17, 2026</span>
+            <span><i class="far fa-clock" aria-hidden="true"></i> 8 min read</span>
+          </div>
+          <a href="pharma-4-0-what-it-actually-means-for-pharmaceutical-manufacturing-leaders-in-2026.html" class="blog-read-more">Read Article <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </article>
+
+      <article class="blog-card" data-cat="regulatory">
+        <div class="blog-thumb">
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=75&fit=crop" alt="Why pharma executives attend virtual summits" loading="lazy" width="600" height="210" />
+          <span class="blog-cat">Leadership</span>
+        </div>
+        <div class="blog-body">
+          <h2>Why Pharma Executives Attend Virtual Leadership Summits in 2026 — and What They Get From It</h2>
+          <p class="blog-excerpt">Beyond CPD hours — the real ROI that senior pharma leaders report from virtual conclaves: deals, intelligence, and rare peer conversations.</p>
+          <div class="blog-meta-row">
+            <span><i class="far fa-calendar" aria-hidden="true"></i> Aug 17, 2026</span>
+            <span><i class="far fa-clock" aria-hidden="true"></i> 6 min read</span>
+          </div>
+          <a href="why-pharma-executives-attend-virtual-leadership-summits-in-2026-and-what-they-get-from-it.html" class="blog-read-more">Read Article <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </article>
+
+      <article class="blog-card" data-cat="patent">
+        <div class="blog-thumb">
+          <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&q=75&fit=crop" alt="Biosimilars commercialisation strategy" loading="lazy" width="600" height="210" />
+          <span class="blog-cat">Market Access</span>
+        </div>
+        <div class="blog-body">
+          <h2>Commercialising Biosimilars: Strategies for the 2026 Market Landscape</h2>
+          <p class="blog-excerpt">As the biosimilar wave crests, first-mover advantage is evaporating. This is the differentiation and market access playbook for 2026.</p>
+          <div class="blog-meta-row">
+            <span><i class="far fa-calendar" aria-hidden="true"></i> Aug 17, 2026</span>
+            <span><i class="far fa-clock" aria-hidden="true"></i> 7 min read</span>
+          </div>
+          <a href="commercializing-biosimilars-strategies-for-the-2026-market-landscape.html" class="blog-read-more">Read Article <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </article>
+
+      <article class="blog-card" data-cat="regulatory">
+        <div class="blog-thumb">
+          <img src="https://images.unsplash.com/photo-1536746803623-cef87080bfc8?w=600&q=75&fit=crop" alt="Global quality standards data integrity" loading="lazy" width="600" height="210" />
+          <span class="blog-cat">Regulatory</span>
+        </div>
+        <div class="blog-body">
+          <h2>Navigating Global Quality Standards: The New Era of Data Integrity</h2>
+          <p class="blog-excerpt">FDA, EMA, and WHO are converging on stricter data integrity frameworks. What this means for quality heads and compliance officers in 2026.</p>
+          <div class="blog-meta-row">
+            <span><i class="far fa-calendar" aria-hidden="true"></i> Aug 17, 2026</span>
+            <span><i class="far fa-clock" aria-hidden="true"></i> 8 min read</span>
+          </div>
+          <a href="navigating-global-quality-standards-the-new-era-of-data-integrity.html" class="blog-read-more">Read Article <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </article>
+
+      <article class="blog-card" data-cat="regulatory">
+        <div class="blog-thumb">
+          <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&q=75&fit=crop" alt="Candida auris superbug pharma" loading="lazy" width="600" height="210" />
+          <span class="blog-cat">Public Health</span>
+        </div>
+        <div class="blog-body">
+          <h2>Candida Auris: Why the World's Most Dangerous Superbug Is a Pharma Industry Wake-Up Call</h2>
+          <p class="blog-excerpt">Drug-resistant Candida auris is spreading across continents. How the antifungal pipeline crisis exposes systemic R&amp;D gaps the industry must address now.</p>
+          <div class="blog-meta-row">
+            <span><i class="far fa-calendar" aria-hidden="true"></i> Aug 17, 2026</span>
+            <span><i class="far fa-clock" aria-hidden="true"></i> 9 min read</span>
+          </div>
+          <a href="candida-auris-why-the-world-s-most-dangerous-superbug-is-a-pharma-industry-wake-up-call.html" class="blog-read-more">Read Article <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </article>
+
+      <article class="blog-card" data-cat="ai">
+        <div class="blog-thumb">
+          <img src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=600&q=75&fit=crop" alt="COVID summer surge antiviral pipeline 2026" loading="lazy" width="600" height="210" />
+          <span class="blog-cat">Antivirals</span>
+        </div>
+        <div class="blog-body">
+          <h2>The 2026 COVID Summer Surge and What It Reveals About the Antiviral Drug Pipeline</h2>
+          <p class="blog-excerpt">The JN.1 sub-variant surge exposed critical gaps in the antiviral pipeline. A frank assessment of what pharma must build to be ready for the next wave.</p>
+          <div class="blog-meta-row">
+            <span><i class="far fa-calendar" aria-hidden="true"></i> Aug 17, 2026</span>
+            <span><i class="far fa-clock" aria-hidden="true"></i> 8 min read</span>
+          </div>
+          <a href="the-2026-covid-summer-surge-and-what-it-reveals-about-the-antiviral-drug-pipeline.html" class="blog-read-more">Read Article <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </article>
+
+      <article class="blog-card" data-cat="patent">
+        <div class="blog-thumb">
+          <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=600&q=75&fit=crop" alt="Eli Lilly retatrutide GLP-1 IP crisis" loading="lazy" width="600" height="210" />
+          <span class="blog-cat">IP &amp; Litigation</span>
+        </div>
+        <div class="blog-body">
+          <h2>Eli Lilly's Retatrutide Lawsuits: What the GLP-1 Black Market Tells Us About Pharma's IP Crisis</h2>
+          <p class="blog-excerpt">Compounded semaglutide, black-market GLP-1s, and a flood of patent litigation. The Eli Lilly playbook reveals the strategic IP battle defining pharma's next decade.</p>
+          <div class="blog-meta-row">
+            <span><i class="far fa-calendar" aria-hidden="true"></i> Aug 17, 2026</span>
+            <span><i class="far fa-clock" aria-hidden="true"></i> 10 min read</span>
+          </div>
+          <a href="eli-lilly-s-retatrutide-lawsuits-what-the-glp-1-black-market-tells-us-about-pharma-s-ip-crisis.html" class="blog-read-more">Read Article <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </article>
+
+    </div><!-- /blog-grid -->
+
+    <!-- CTA Banner -->
+    <div class="cta-banner">
+      <h3>Meet the Minds <span>Behind the Articles</span></h3>
+      <p>These insights come alive at BuildTek's global executive summits. Join enterprise leaders for deep-dive technical keynotes, peer roundtables, and high-impact networking.</p>
+      <div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;">
+        <a href="pharma-vista.html" class="btn btn-gold"><i class="fas fa-flask" aria-hidden="true"></i> Pharma Vista 2026</a>
+        <a href="aisecsummit.html" class="btn" style="background: rgba(0,240,255,0.15); border: 1px solid #00f0ff; color: #00f0ff; box-shadow: 0 0 20px rgba(0,240,255,0.2);"><i class="fas fa-shield-alt" aria-hidden="true"></i> AI Security Summit 2027</a>
+      </div>
+    </div>
+  </main>
+
+  <div class="mini-footer">
+    <p>© 2026 BuildTek Events · <a href="https://buildtek.in/">buildtek.in</a> · <a href="privacy-policy.html">Privacy Policy</a> · <a href="terms.html">Terms</a></p>
+  </div>
+
+  <script>
+    function filterCards(cat) {
+      const cards = document.querySelectorAll('.blog-card');
+      cards.forEach(card => {
+        const match = cat === 'all' || card.dataset.cat === cat;
+        card.style.display = match ? '' : 'none';
+      });
+      document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.getAttribute('onclick').includes("'" + cat + "'"));
+      });
+    }
+  </script>
+</body>
+</html>

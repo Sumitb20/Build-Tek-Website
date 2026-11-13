@@ -1,0 +1,464 @@
+{
+  "ai-in-drug-discovery-from-algorithms-to-clinical-reality-in-2026.html": {
+    "title": "AI in Drug Discovery: From Algorithms to Clinical Reality in 2026",
+    "description": "AI-discovered molecules have reached Phase 2. Where machine learning genuinely accelerates pharmaceutical R&D in 2026 \u2014 and where caution is still warranted.",
+    "canonical": "https://buildtek.in/ai-in-drug-discovery-from-algorithms-to-clinical-reality-in-2026.html",
+    "robots": "index, follow",
+    "h1_count": 1,
+    "h1s": [
+      "AI in Drug Discovery: From Algorithms to Clinical Reality in 2026"
+    ],
+    "has_jsonld": true,
+    "jsonld_valid": true,
+    "jsonld_errors": [],
+    "images_count": 3,
+    "missing_alt": [],
+    "size_kb": 42.4
+  },
+  "ai-sec-register.html": {
+    "title": "AI-Sec Summit 2027 \u2014 Official Registration Portal",
+    "description": "Register for AI-Sec Global Summit 2027. Standard ($199) and Executive ($299) passes available for security practitioners. 13 February 2027.",
+    "canonical": "",
+    "robots": "",
+    "h1_count": 0,
+    "h1s": [],
+    "has_jsonld": false,
+    "jsonld_valid": true,
+    "jsonld_errors": [],
+    "images_count": 0,
+    "missing_alt": [],
+    "size_kb": 13.8
+  },
+  "ai-security-2026-enterprise-readiness.html": {
+    "title": "AI Security 2026: Are Enterprises Ready for Machine-Speed Cyber Threats? | BuildTek Events",
+    "description": "AI is accelerating both cyber defence and cyber attacks. An executive analysis of AI security risks, AI agents security, AI governance and the CISO agenda for 2026.",
+    "canonical": "https://buildtek.in/ai-security-2026-enterprise-readiness.html",
+    "robots": "",
+    "h1_count": 3,
+    "h1s": [
+      "AI Security in 2026:",
+      "Are Organizations Ready for the Next Generation of Cyber Threats?"
+    ],
+    "has_jsonld": true,
+    "jsonld_valid": true,
+    "jsonld_errors": [],
+    "images_count": 1,
+    "missing_alt": [],
+    "size_kb": 55.4
+  },
+  "aisecsummit.html": {
+    "title": "AI Security Summit 2027 | 13 Feb \u2014 Virtual CISO Conference",
+    "description": "Join 200 CISOs & security leaders at the AI Security Summit 2027 (13 Feb). LLM threats, AI red teaming, autonomous SOC \u2014 6 hours, zero vendor pitches. Register now.",
+    "canonical": "https://buildtek.in/aisecsummit.html",
+    "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+    "h1_count": 4,
+    "h1s": [
+      "AI-SEC GLOBAL",
+      "SUMMIT 2027"
+    ],
+    "has_jsonld": true,
+    "jsonld_valid": true,
+    "jsonld_errors": [],
+    "images_count": 7,
+    "missing_alt": [],
+    "size_kb": 137.8
+  },
+  "blog-01-mcp-attack-surface.html": {
+    "title": "Model Context Protocol (MCP) Security: Attack Surfaces & Hardening Guide 2026 | BuildTek",
+    "description": "Technical guide to Model Context Protocol (MCP) security: tool definition poisoning, indirect prompt injection, credential exfiltration, and CISO hardening checklist for autonomous AI agents.",
+    "canonical": "https://buildtek.in/blog-01-mcp-attack-surface.html",
+    "robots": "",
+    "h1_count": 1,
+    "h1s": [
+      "Model Context Protocol (MCP) Security: Attack Surfaces, Tool-Poisoning & Hardening Guide 2026"
+    ],
+    "has_jsonld": true,
+    "jsonld_valid": true,
+    "jsonld_errors": [],
+    "images_count": 0,
+    "missing_alt": [],
+    "size_kb": 30.4
+  },
+  "blog-02-llm-red-teaming-framework.html": {
+    "title": "The Enterprise Guide to LLM Red Teaming: Jailbreak Defenses & MITRE ATLAS 2026 | BuildTek",
+    "description": "A comprehensive enterprise guide to LLM red teaming in 2026: automated adversarial fuzzing, prompt injection evasion techniques, MITRE ATLAS matrix mapping, and defense-in-depth guardrail benchmarks.",
+    "canonical": "https://buildtek.in/blog-02-llm-red-teaming-framework.html",
+    "robots": "",
+    "h1_count": 1,
+    "h1s": [
+      "The Enterprise Guide to LLM Red Teaming: Jailbreak Defenses, Automated Evals & MITRE ATLAS Mapping (2026)"
+    ],
+    "has_jsonld": true,
+    "jsonld_valid": true,
+    "jsonld_errors": [],
+    "images_count": 0,
+    "missing_alt": [],
+    "size_kb": 23.9
+  },
+  "blog-03-eu-ai-act-ciso-guide.html": {
+    "title": "EU AI Act High-Risk Enforcement: The Enterprise CISO Compliance Playbook 2026 | BuildTek",
+    "description": "A comprehensive CISO compliance guide to the EU AI Act in 2026: Annex III high-risk classification, Article 50 transparency mandates, \u20ac35M penalty exposure, and technical conformity checklists.",
+    "canonical": "https://buildtek.in/blog-03-eu-ai-act-ciso-guide.html",
+    "robots": "",
+    "h1_count": 1,
+    "h1s": [
+      "EU AI Act High-Risk Enforcement: The Enterprise CISO Compliance Playbook (2026)"
+    ],
+    "has_jsonld": true,
+    "jsonld_valid": true,
+    "jsonld_errors": [],
+    "images_count": 0,
+    "missing_alt": [],
+    "size_kb": 23.7
+  },
+  "blog-04-agent-tool-calling-hijacks.html": {
+    "title": "Agent Tool-Calling Hijacks: Preventing Privilege Escalation in Autonomous AI 2026 | BuildTek",
+    "description": "Technical guide to preventing agent tool-calling hijacks, confused deputy attacks, and silent privilege escalation across autonomous enterprise AI workflows and multi-agent frameworks.",
+    "canonical": "https://buildtek.in/blog-04-agent-tool-calling-hijacks.html",
+    "robots": "",
+    "h1_count": 1,
+    "h1s": [
+      "Agent Tool-Calling Hijacks: Preventing Silent Privilege Escalation in Autonomous AI Workflows"
+    ],
+    "has_jsonld": true,
+    "jsonld_valid": true,
+    "jsonld_errors": [],
+    "images_count": 0,
+    "missing_alt": [],
+    "size_kb": 21.3
+  },
+  "blog-05-shadow-ai-unsanctioned-models.html": {
+    "title": "Shadow AI & Unsanctioned Models: How Rogue LLM Workflows Bypass Enterprise DLP 2026 | BuildTek",
+    "description": "An executive security analysis of Shadow AI in 2026: unsanctioned developer LLMs, local open-weight inference, corporate code leaks, and automated CASB/SASE detection playbooks.",
+    "canonical": "https://buildtek.in/blog-05-shadow-ai-unsanctioned-models.html",
+    "robots": "",
+    "h1_count": 1,
+    "h1s": [
+      "Shadow AI & Unsanctioned Models: How Rogue LLM Workflows Bypass Enterprise DLP (2026)"
+    ],
+    "has_jsonld": true,
+    "jsonld_valid": true,
+    "jsonld_errors": [],
+    "images_count": 0,
+    "missing_alt": [],
+    "size_kb": 23.5
+  },
+  "blog.html": {
+    "title": "Pharma Leadership Blog \u2014 Research & Insights | BuildTek Events",
+    "description": "In-depth pharma leadership articles from BuildTek Events \u2014 patent strategy, AI in drug discovery, supply chain resilience, Pharma 4.0, biosimilars, regulatory compliance and more.",
+    "canonical": "https://buildtek.in/blog.html",
+    "robots": "index, follow",
+    "h1_count": 2,
+    "h1s": [
+      "Pharma Leadership",
+      "Intelligence"
+    ],
+    "has_jsonld": true,
+    "jsonld_valid": true,
+    "jsonld_errors": [],
+    "images_count": 17,
+    "missing_alt": [],
+    "size_kb": 32.2
+  },
+  "candida-auris-why-the-world-s-most-dangerous-superbug-is-a-pharma-industry-wake-up-call.html": {
+    "title": "Candida Auris: Pharma's Antifungal Resistance Wake-Up Call | BuildTek",
+    "description": "A multidrug-resistant fungal pathogen is spreading through hospitals worldwide. What Candida auris reveals about the broken economics of antimicrobial development.",
+    "canonical": "https://buildtek.in/candida-auris-why-the-world-s-most-dangerous-superbug-is-a-pharma-industry-wake-up-call.html",
+    "robots": "index, follow",
+    "h1_count": 1,
+    "h1s": [
+      "Candida Auris: Why the World's Most Dangerous Superbug Is a Pharma Industry Wake-Up Call"
+    ],
+    "has_jsonld": true,
+    "jsonld_valid": true,
+    "jsonld_errors": [],
+    "images_count": 3,
+    "missing_alt": [],
+    "size_kb": 42.8
+  },
+  "commercializing-biosimilars-strategies-for-the-2026-market-landscape.html": {
+    "title": "Commercializing Biosimilars: Strategies for the 2026 Market | BuildTek",
+    "description": "Biosimilars have moved from novelty to fierce competition. Pricing, market penetration and physician engagement strategies for the 2026 biosimilar landscape.",
+    "canonical": "https://buildtek.in/commercializing-biosimilars-strategies-for-the-2026-market-landscape.html",
+    "robots": "index, follow",
+    "h1_count": 1,
+    "h1s": [
+      "Commercializing Biosimilars: Strategies for the 2026 Market Landscape"
+    ],
+    "has_jsonld": true,
+    "jsonld_valid": true,
+    "jsonld_errors": [],
+    "images_count": 3,
+    "missing_alt": [],
+    "size_kb": 38.2
+  },
+  "delegate-registration.html": {
+    "title": "Delegate Registration | Pharma Vista 2026 Summit",
+    "description": "Register for Pharma Vista 2026 Virtual Summit. Join global pharmaceutical, biotech, and healthcare leaders. Request your vetted complimentary delegate pass.",
+    "canonical": "",
+    "robots": "",
+    "h1_count": 2,
+    "h1s": [
+      "Pharma Vista 2026",
+      "Application Submitted"
+    ],
+    "has_jsonld": false,
+    "jsonld_valid": true,
+    "jsonld_errors": [],
+    "images_count": 0,
+    "missing_alt": [],
+    "size_kb": 57.9
+  },
+  "dubai-coming-soon.html": {
+    "title": "Dubai Realty & Build Forum 2026 \u2014 Register Interest | BuildTek Events",
+    "description": "Dubai Realty & Build Forum 2026 is coming. Register your interest now to be among the first invited to the Middle East's premier real estate and construction summit, November 2026, Dubai UAE.",
+    "canonical": "https://buildtek.in/dubai-coming-soon.html",
+    "robots": "index, follow",
+    "h1_count": 6,
+    "h1s": [
+      "Dubai Realty",
+      "& Build Forum",
+      "The Middle East's Premier Summit"
+    ],
+    "has_jsonld": true,
+    "jsonld_valid": true,
+    "jsonld_errors": [],
+    "images_count": 1,
+    "missing_alt": [],
+    "size_kb": 23.2
+  },
+  "eli-lilly-s-retatrutide-lawsuits-what-the-glp-1-black-market-tells-us-about-pharma-s-ip-crisis.html": {
+    "title": "Retatrutide Lawsuits: The GLP-1 Black Market and Pharma's IP Crisis",
+    "description": "An unapproved Phase 3 drug is already sold online. Eli Lilly's retatrutide lawsuits expose how compounding, peptide sellers and demand are outrunning pharma IP enforcement.",
+    "canonical": "https://buildtek.in/eli-lilly-s-retatrutide-lawsuits-what-the-glp-1-black-market-tells-us-about-pharma-s-ip-crisis.html",
+    "robots": "index, follow",
+    "h1_count": 1,
+    "h1s": [
+      "Eli Lilly's Retatrutide Lawsuits: What the GLP-1 Black Market Tells Us About Pharma's IP Crisis"
+    ],
+    "has_jsonld": true,
+    "jsonld_valid": true,
+    "jsonld_errors": [],
+    "images_count": 3,
+    "missing_alt": [],
+    "size_kb": 43.8
+  },
+  "index.html": {
+    "title": "BuildTek Events \u2014 Where Industry Leaders Meet What's Next",
+    "description": "",
+    "canonical": "",
+    "robots": "",
+    "h1_count": 13,
+    "h1s": [
+      "Where",
+      "Industry",
+      "Leaders",
+      "Shape",
+      "What's",
+      "Next."
+    ],
+    "has_jsonld": false,
+    "jsonld_valid": true,
+    "jsonld_errors": [],
+    "images_count": 3,
+    "missing_alt": [],
+    "size_kb": 617.6
+  },
+  "navigating-global-quality-standards-the-new-era-of-data-integrity.html": {
+    "title": "Global Quality Standards: The New Era of Data Integrity | BuildTek",
+    "description": "ALCOA+ is now a board-level concern. How FDA and EMA data integrity expectations are reshaping GMP compliance, and what moving beyond paper actually requires.",
+    "canonical": "https://buildtek.in/navigating-global-quality-standards-the-new-era-of-data-integrity.html",
+    "robots": "index, follow",
+    "h1_count": 1,
+    "h1s": [
+      "Navigating Global Quality Standards: The New Era of Data Integrity"
+    ],
+    "has_jsonld": true,
+    "jsonld_valid": true,
+    "jsonld_errors": [],
+    "images_count": 3,
+    "missing_alt": [],
+    "size_kb": 38.1
+  },
+  "navigating-the-2026-patent-cliff-what-pharmaceutical-leaders-must-do-now.html": {
+    "title": "Navigating the 2026 Patent Cliff: What Pharma Leaders Must Do Now",
+    "description": "Over $300bn in annual drug revenue loses patent protection by 2030. How pharmaceutical executives are restructuring portfolios, M&A and lifecycle strategy now.",
+    "canonical": "https://buildtek.in/navigating-the-2026-patent-cliff-what-pharmaceutical-leaders-must-do-now.html",
+    "robots": "index, follow",
+    "h1_count": 1,
+    "h1s": [
+      "Navigating the 2026 Patent Cliff: What Pharmaceutical Leaders Must Do Now"
+    ],
+    "has_jsonld": true,
+    "jsonld_valid": true,
+    "jsonld_errors": [],
+    "images_count": 3,
+    "missing_alt": [],
+    "size_kb": 42.5
+  },
+  "pharma-4-0-what-it-actually-means-for-pharmaceutical-manufacturing-leaders-in-2026.html": {
+    "title": "Pharma 4.0: What It Actually Means for Manufacturing Leaders | BuildTek",
+    "description": "Beyond the buzzword. The core Pharma 4.0 technologies, the implementation barriers executives actually hit, and what regulators now expect from digital manufacturing.",
+    "canonical": "https://buildtek.in/pharma-4-0-what-it-actually-means-for-pharmaceutical-manufacturing-leaders-in-2026.html",
+    "robots": "index, follow",
+    "h1_count": 1,
+    "h1s": [
+      "Pharma 4.0: What It Actually Means for Pharmaceutical Manufacturing Leaders in 2026"
+    ],
+    "has_jsonld": true,
+    "jsonld_valid": true,
+    "jsonld_errors": [],
+    "images_count": 3,
+    "missing_alt": [],
+    "size_kb": 41.9
+  },
+  "pharma-supply-chain-resilience-in-2026-the-strategic-imperative-no-executive-can-ignore.html": {
+    "title": "Pharma Supply Chain Resilience in 2026: The Strategic Imperative",
+    "description": "The FDA logged ~270 active drug shortages in 2025. The three pillars of pharmaceutical supply chain resilience \u2014 API diversification, visibility and CDMO strategy.",
+    "canonical": "https://buildtek.in/pharma-supply-chain-resilience-in-2026-the-strategic-imperative-no-executive-can-ignore.html",
+    "robots": "index, follow",
+    "h1_count": 1,
+    "h1s": [
+      "Pharma Supply Chain Resilience in 2026: The Strategic Imperative No Executive Can Ignore"
+    ],
+    "has_jsonld": true,
+    "jsonld_valid": true,
+    "jsonld_errors": [],
+    "images_count": 3,
+    "missing_alt": [],
+    "size_kb": 42.6
+  },
+  "pharma-vista-thank-you.html": {
+    "title": "Thank You | Pharma Vista 2026 \u2014 Registration Received",
+    "description": "Thank you for registering for Pharma Vista 2026. Your executive delegate application has been successfully received.",
+    "canonical": "https://pharmavistaglobal.com/thank-you.html",
+    "robots": "noindex, nofollow",
+    "h1_count": 3,
+    "h1s": [
+      "Thank",
+      "You!"
+    ],
+    "has_jsonld": false,
+    "jsonld_valid": true,
+    "jsonld_errors": [],
+    "images_count": 0,
+    "missing_alt": [],
+    "size_kb": 36.8
+  },
+  "pharma-vista.html": {
+    "title": "Pharma Vista Global 2026 (Virtual) | Virtual Pharma Summit & Pharmaceutical Conference",
+    "description": "Register for Pharma Vista 2026, the premier virtual pharma summit and pharmaceutical leadership event. Join 200 global executives on 5 October 2026 to discuss Pharma 4.0, FDA regulatory compliance, biotech innovation, and drug manufacturing.",
+    "canonical": "https://pharmavistaglobal.com/",
+    "robots": "index, follow",
+    "h1_count": 3,
+    "h1s": [
+      "Pharma",
+      "Vista"
+    ],
+    "has_jsonld": true,
+    "jsonld_valid": true,
+    "jsonld_errors": [],
+    "images_count": 23,
+    "missing_alt": [],
+    "size_kb": 205.0
+  },
+  "privacy-policy.html": {
+    "title": "Privacy Policy | BuildTek Events",
+    "description": "Privacy Policy for BuildTek Events \u2014 how we collect, use, and protect your personal data in compliance with GDPR and India's DPDP Act 2023.",
+    "canonical": "https://buildtek.in/privacy-policy.html",
+    "robots": "index, follow",
+    "h1_count": 2,
+    "h1s": [
+      "Privacy",
+      "Policy"
+    ],
+    "has_jsonld": false,
+    "jsonld_valid": true,
+    "jsonld_errors": [],
+    "images_count": 1,
+    "missing_alt": [],
+    "size_kb": 12.4
+  },
+  "registration.html": {
+    "title": "Delegate Registration | Pharma Vista 2026 Summit",
+    "description": "Register for the Pharma Vista 2026 Virtual Summit. Join global pharmaceutical, biotech, and healthcare leaders to explore AI in drug discovery, clinical research, regulatory excellence, and smart manufacturing.",
+    "canonical": "",
+    "robots": "",
+    "h1_count": 2,
+    "h1s": [
+      "Pharma Vista 2026",
+      "Application Submitted"
+    ],
+    "has_jsonld": false,
+    "jsonld_valid": true,
+    "jsonld_errors": [],
+    "images_count": 0,
+    "missing_alt": [],
+    "size_kb": 55.2
+  },
+  "speaker-kit.html": {
+    "title": "Speaker & Partner Promotional Toolkit | AI Security Global Summit 2027",
+    "description": "Official speaker, sponsor, and partner promotional toolkit for the AI Security Global Summit 2027. Pre-written LinkedIn swipe copy, graphics, and tracking links.",
+    "canonical": "",
+    "robots": "",
+    "h1_count": 1,
+    "h1s": [
+      "Promote Your AI Security Summit 2027 Session"
+    ],
+    "has_jsonld": false,
+    "jsonld_valid": true,
+    "jsonld_errors": [],
+    "images_count": 0,
+    "missing_alt": [],
+    "size_kb": 11.4
+  },
+  "terms.html": {
+    "title": "Terms of Service | BuildTek Events",
+    "description": "Terms of Service for BuildTek Events \u2014 delegate registration, cancellation policy, intellectual property, code of conduct, and liability terms for all BuildTek summits and events.",
+    "canonical": "https://buildtek.in/terms.html",
+    "robots": "index, follow",
+    "h1_count": 2,
+    "h1s": [
+      "Terms of",
+      "Service"
+    ],
+    "has_jsonld": false,
+    "jsonld_valid": true,
+    "jsonld_errors": [],
+    "images_count": 1,
+    "missing_alt": [],
+    "size_kb": 12.0
+  },
+  "the-2026-covid-summer-surge-and-what-it-reveals-about-the-antiviral-drug-pipeline.html": {
+    "title": "The 2026 COVID Summer Surge and the Antiviral Drug Pipeline | BuildTek",
+    "description": "COVID has slipped down the pharma agenda, but the 2026 summer surge exposes uncomfortable truths about antiviral pipeline investment and pandemic preparedness.",
+    "canonical": "https://buildtek.in/the-2026-covid-summer-surge-and-what-it-reveals-about-the-antiviral-drug-pipeline.html",
+    "robots": "index, follow",
+    "h1_count": 1,
+    "h1s": [
+      "The 2026 COVID Summer Surge and What It Reveals About the Antiviral Drug Pipeline"
+    ],
+    "has_jsonld": true,
+    "jsonld_valid": true,
+    "jsonld_errors": [],
+    "images_count": 3,
+    "missing_alt": [],
+    "size_kb": 43.1
+  },
+  "why-pharma-executives-attend-virtual-leadership-summits-in-2026-and-what-they-get-from-it.html": {
+    "title": "Why Pharma Executives Attend Virtual Leadership Summits in 2026",
+    "description": "The pharma conference calendar is crowded. Why senior leaders increasingly choose focused virtual formats over large trade shows, and what they expect in return.",
+    "canonical": "https://buildtek.in/why-pharma-executives-attend-virtual-leadership-summits-in-2026-and-what-they-get-from-it.html",
+    "robots": "index, follow",
+    "h1_count": 1,
+    "h1s": [
+      "Why Pharma Executives Attend Virtual Leadership Summits in 2026 \u2014 And What They Get From It"
+    ],
+    "has_jsonld": true,
+    "jsonld_valid": true,
+    "jsonld_errors": [],
+    "images_count": 3,
+    "missing_alt": [],
+    "size_kb": 41.1
+  }
+}

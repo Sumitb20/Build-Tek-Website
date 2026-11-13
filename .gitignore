@@ -1,0 +1,15 @@
+# Deployment zips
+*.zip
+*.tar.gz
+
+# Python cache & temporary scripts
+__pycache__/
+*.pyc
+_backups/
+_build/__pycache__/
+
+# OS & Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

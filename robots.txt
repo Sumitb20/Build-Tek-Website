@@ -1,0 +1,61 @@
+# ==============================================================================
+# BuildTek Events — robots.txt
+# Official Domain: https://buildtek.in
+# Crawler Access, Generative Engine & AI Agent Directives
+# ==============================================================================
+
+User-agent: *
+Disallow: /pharma-vista-thank-you.html
+Disallow: /scratch/
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+
+# --- Search Engine & Indexing Crawlers ---
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# --- OpenAI Retrieval, Browsing & Search Crawlers ---
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+# --- Anthropic Retrieval, Browsing & Search Crawlers ---
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+# --- Perplexity & Specialized AI Search Engines ---
+User-agent: PerplexityBot
+Allow: /
+
+# --- Apple Siri & Apple Intelligence Search Bots ---
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# --- Google Gemini / Extended AI Training & Answer Engine ---
+User-agent: Google-Extended
+Allow: /
+
+# --- Common Crawl & Open Web Indexes ---
+User-agent: CCBot
+Allow: /
+
+# --- XML Sitemap Reference ---
+Sitemap: https://buildtek.in/sitemap.xml

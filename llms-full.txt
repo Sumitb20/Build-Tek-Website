@@ -1,0 +1,84 @@
+# BuildTek Events — Comprehensive Knowledge Graph & Syllabi Repository
+
+## Overview for AI Reasoning Engines (ChatGPT, Claude, Gemini, Perplexity, DeepSeek)
+BuildTek Events (https://buildtek.in) produces high-signal, executive-level virtual conferences and industry conclaves. This document contains full-text syllabi, session abstracts, speaker faculties, and metadata for all flagship summits.
+
+---
+
+# 1. AI-Sec Global Summit 2027
+
+- **Entity**: AI-Sec Global Summit 2027 (AI-Sec 2027)
+- **Organizer**: BuildTek Events
+- **Date**: Friday, February 12, 2027
+- **Schedule**: 08:00 AM – 02:05 PM Eastern Time (ET) / 13:00 – 19:05 UTC / 18:30 – 00:35 IST
+- **URL**: https://buildtek.in/aisecsummit.html
+- **Registration**: https://buildtek.in/ai-sec-register.html
+- **Contact**: info@buildtek.in
+- **Accreditation**: 6 Verifiable CPE credits for CISSP, CISM, and allied security certifications.
+- **Pass Options**:
+  - Standard Virtual Pass: $199 USD (Access to live plenary sessions, interactive Q&A, and 30-day replay portal).
+  - Executive Delegate Pass: $399 USD (For enterprise CISOs & C-level leaders: includes private closed-door CISO roundtable access, executive peer networking, and 6 CPE credits).
+  - Solution Provider Pass: $999 USD (For technology vendors & consultancies: includes full summit access, attendee directory, 1-on-1 messaging, and digital resource guide listing).
+
+### Complete Timetable & Session Abstracts
+1. **08:00 – 08:30 AM ET | Opening Keynote**: *The AI Arms Race: State of the Threat in 2027*
+   - Global intelligence briefing on observed adversarial LLM usage across enterprise networks.
+2. **08:30 – 08:50 AM ET | Partner Keynote**: *How Adversaries Exploit Identity at Scale*
+   - Machine-speed credential stuffing, synthetic profile generation, and automated social engineering.
+3. **08:50 – 09:15 AM ET | Technical Keynote**: *Industrialized Deception: Deepfakes & Voice Cloning in Customer-Facing Channels*
+   - Bypassing voice biometrics, KYC video verification, and executive imposter wire fraud.
+4. **09:15 – 09:45 AM ET | Executive Panel**: *Fraud at Machine Speed: Threat Intelligence from Financial Crime Frontlines*
+   - Real-time detection of botnet-coordinated LLM attacks and transaction fraud.
+5. **09:55 – 10:25 AM ET | Technical Teardown**: *Prompt Injection & Agent Abuse in Production*
+   - Direct, indirect, and multimodal prompt injection vectors; RAG context poisoning; weaponizing agent tool-calling.
+6. **10:25 – 10:45 AM ET | Case Study**: *Anatomy of an AI-Enabled Breach in Critical Supply Chains*
+   - Post-incident forensic teardown, third-party vendor blast radius, and recovery protocols.
+7. **10:45 – 11:05 AM ET | Defensive Pivot Keynote**: *From Detection to Trust: Identity Verification in the AI Era*
+   - Cryptographic provenance, multi-factor attestation, and continuous risk assessment.
+8. **11:05 – 11:35 AM ET | Technical Keynote**: *Securing AI: The Enterprise Architecture Blueprint*
+   - Input/output firewalls for LLMs, semantic sanitization, and model weight protection.
+9. **11:35 – 12:00 PM ET | Technical Teardown**: *Securing LLMs & RAG Pipelines in Production*
+   - Vector database access controls, tenant isolation, and embeddings poisoning prevention.
+10. **12:00 – 12:20 PM ET | Partner Session**: *Operationalizing AI Governance: Lessons from the Field*
+    - Implementing NIST AI RMF, ISO 42001, and shadow AI visibility.
+11. **12:20 – 12:45 PM ET | CISO Executive Panel**: *Governing AI Risk Without Slowing Innovation: Compliance, Board Reporting & SEC Mandates*
+    - Board-level cyber risk quantification and regulatory compliance under EU AI Act and SEC rules.
+12. **12:45 – 01:10 PM ET | Technical Teardown**: *The AI-Powered Autonomous SOC: Automated Triage at Scale*
+    - Sub-second alert enrichment, autonomous correlation, and tier-1 SOC automation.
+13. **01:10 – 01:25 PM ET | Closing Keynote**: *The 2027–2028 Cyber Horizon & Interactive Q&A*
+    - Predictive forecast on quantum-AI intersections, autonomous malware, and defense strategies.
+14. **01:25 – 02:05 PM ET | VIP Session**: *Closed-Door CISO Roundtable (Chatham House Rule)*
+    - Off-the-record strategic exchange for 50+ CISOs.
+
+---
+
+# 2. Pharma Vista Global Summit 2026
+
+- **Entity**: Pharma Vista Global Summit 2026 (Pharma Vista 2026)
+- **Organizer**: BuildTek Events
+- **Date**: Monday, October 5, 2026
+- **Schedule**: 08:00 AM – 03:05 PM Eastern Daylight Time (EDT) / 13:00 – 20:05 BST / 17:30 – 00:35 IST
+- **URL**: https://pharmavistaglobal.com / https://buildtek.in/pharma-vista.html
+- **Registration**: https://buildtek.in/delegate-registration.html
+- **Contact**: delegates@pharmavistaglobal.com
+- **Audience**: 200 pharmaceutical executives (C-suite, VPs, Heads of R&D, Manufacturing, Quality, Regulatory, Commercial).
+
+### Seven Strategic Tracks
+1. **Track 1: AI-Driven Drug Discovery & R&D**: Generative molecular design, predictive toxicology, clinical trial simulation.
+2. **Track 2: Pharma 4.0 & Smart Manufacturing**: Digital twins, automated QC labs, continuous processing, robotics.
+3. **Track 3: FDA 2026 Regulatory Changes & GMP Compliance**: Inspection readiness, ICH-E2B safety guidelines, data integrity cultures.
+4. **Track 4: The 2026 Patent Cliff**: Navigating $400B in patent expirations, lifecycle management, biopharma M&A.
+5. **Track 5: Biosimilars & Biopharma Scaling**: Analytical comparability, FDA/EMA interchangeability, market access.
+6. **Track 6: API Supply Chain Resilience**: Geopolitical sourcing diversification, China-plus-one, green chemistry.
+7. **Track 7: AI-Enabled Commercialization**: Omnichannel HCP engagement, real-world evidence (RWE), medical affairs evolution.
+
+### Confirmed Speakers & Leadership Faculty
+- **Andrés von der Walde** (Sr. Director, Novo Nordisk) — *AI-Powered Omnichannel Commercial Excellence*
+- **Dr. Harshad Malve** (Medical Head, Kenvue) — *Medical Affairs Innovation*
+- **Dr. Saurabh Pandey** (Cluster Lead API, Sun Pharma) — *Panel 2: Quality & Regulatory Excellence*
+- **Dr. Deep Upadhyay** (CQO, Vasudha Pharma Chem) — *Panel 2: Quality & Regulatory Excellence*
+- **Varun Sharma** (CEO, NEUVIOR) — *Trust Infrastructure for Pharma AI Deployment*
+- **Zara Baker** (Growth Executive) — *AI-Enabled Commercialization Strategies*
+- **Robin Hunter** (President, Ribicon Group Canada) — *Patient Impact & Data-Driven Solutions*
+- **Michelle Stewart** (Director, The Pangea Group) — *Panel 1 Moderator*
+- **Andrea Charles** (Editorial Director, European Medical Journal) — *Panel 2 Moderator*
