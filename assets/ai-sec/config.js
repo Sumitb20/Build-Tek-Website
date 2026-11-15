@@ -216,9 +216,9 @@ window.AI_SEC_CONFIG = {
     // --------------------------------------------------------------------------
     forms: {
         // [TO BE CONFIRMED: Backend form handler URL (e.g. FormSubmit, Formspree, Google Apps Script, CRM Webhook)]
-        registrationEndpoint: "https://formsubmit.co/info@buildtek.in",
-        partnerEndpoint: "https://formsubmit.co/info@buildtek.in",
-        leadMagnetEndpoint: "https://formsubmit.co/info@buildtek.in"
+        registrationEndpoint: "https://formsubmit.co/sumit@buildtekevents.com",
+        partnerEndpoint: "https://formsubmit.co/sumit@buildtekevents.com",
+        leadMagnetEndpoint: "https://formsubmit.co/sumit@buildtekevents.com"
     },
 
     // --------------------------------------------------------------------------

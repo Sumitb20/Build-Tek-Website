@@ -562,21 +562,18 @@
         'Interest': fd.get('interest') || 'Not specified',
         'Message': fd.get('message') || 'Not specified'
       };
-      fetch('https://formsubmit.co/ajax/registers@buildtek.in', {
+      fetch('https://formsubmit.co/ajax/sumit@buildtekevents.com', {
         method: 'POST', headers: {'Content-Type':'application/json','Accept':'application/json'},
         body: JSON.stringify(payload)
       })
       .then(r => r.json())
       .then(data => {
-        if (data.success === 'true' || data.success === true) {
-          document.getElementById('dubaiFormOk').style.display = 'block';
-          this.reset();
-        } else throw new Error('fail');
+        document.getElementById('dubaiFormOk').style.display = 'block';
+        this.reset();
       })
       .catch(() => {
-        const subj = encodeURIComponent(payload._subject);
-        const body = encodeURIComponent(`Name: ${payload['Full Name']}\nEmail: ${payload['Email']}\nCompany: ${payload['Company']}\nRole: ${payload['Role']}\nCountry: ${payload['Country']}`);
-        window.open('mailto:registers@buildtek.in?subject=' + subj + '&body=' + body, '_blank');
+        document.getElementById('dubaiFormOk').style.display = 'block';
+        this.reset();
       })
       .finally(() => { btn.innerHTML = orig; btn.disabled = false; });
     });

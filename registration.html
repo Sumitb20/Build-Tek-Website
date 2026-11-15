@@ -1435,6 +1435,25 @@
 
             // Save data to localStorage
             localStorage.setItem('pharma_vista_registration', JSON.stringify(data));
+
+            // Silently dispatch registration to inbox via FormSubmit AJAX
+            try {
+              fetch('https://formsubmit.co/ajax/sumit@buildtekevents.com', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                body: JSON.stringify({
+                  _subject: `[NEW REGISTRATION] Pharma Vista — ${data.firstName} ${data.lastName} (${data.companyName})`,
+                  'Full Name': `${data.firstName} ${data.lastName}`,
+                  'Business Email': data.businessEmail,
+                  'Mobile Number': data.mobileNumber,
+                  'Company Name': data.companyName,
+                  'Job Title': data.jobTitle,
+                  'Applying As': data.applyingAs,
+                  'Area of Interest': data.areaOfInterest,
+                  'Ticket Serial': `PV-2026-${Math.floor(10000 + Math.random() * 90000)}`
+                })
+              }).catch(() => {});
+            } catch(e) {}
             
             // Show loading state
             const submitBtn = form.querySelector('button[type="submit"]');

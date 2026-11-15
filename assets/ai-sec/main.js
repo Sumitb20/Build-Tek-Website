@@ -497,7 +497,7 @@
                 });
 
                 // Simulate/submit to endpoint
-                const endpoint = (CFG.forms && CFG.forms.leadMagnetEndpoint) || 'https://formsubmit.co/info@buildtek.in';
+                const endpoint = (CFG.forms && CFG.forms.leadMagnetEndpoint) || 'https://formsubmit.co/sumit@buildtekevents.com';
                 const formData = new FormData(magnetForm);
                 formData.append('Lead_Magnet', '2027 AI Threat Matrix Executive Summary');
 

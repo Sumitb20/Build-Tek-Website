@@ -83,3 +83,4 @@ python3 validate_seo_geo.py
 - Never commit AWS access keys or secrets to Git.
 - Always include `integrity` and `crossorigin="anonymous"` when referencing third-party scripts.
 - Keep `llms.txt` and `robots.txt` synchronized with newly added summits and publications.
+
