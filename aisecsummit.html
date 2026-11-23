@@ -746,10 +746,12 @@
             border: 1px solid rgba(0, 240, 255, 0.4);
             border-radius: 14px;
             padding: 2.2rem;
-            max-width: 480px;
+            max-width: 500px;
             width: 100%;
             position: relative;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+            max-height: 90vh;
+            overflow-y: auto;
         }
         .threat-modal-close {
             position: absolute;
@@ -1961,13 +1963,25 @@
                 <input type="hidden" name="_template" value="table">
                 <input type="text" name="_honey" style="display:none">
 
-                <div class="form-group" style="margin-bottom: 1rem;">
-                    <label for="magnet-email" style="display: block; font-size: 0.75rem; font-family: var(--font-mono); color: #cbd5e1; margin-bottom: 0.4rem;">WORK EMAIL ADDRESS *</label>
+                <div class="form-group" style="margin-bottom: 0.9rem;">
+                    <label for="magnet-name" style="display: block; font-size: 0.75rem; font-family: var(--font-mono); color: #cbd5e1; margin-bottom: 0.35rem;">FULL NAME *</label>
+                    <input type="text" id="magnet-name" name="Full Name" class="cyber-input" placeholder="e.g. Alex Mercer" required style="width: 100%; padding: 0.6rem 0.8rem; background: rgba(3, 7, 18, 0.8); border: 1px solid rgba(0, 240, 255, 0.4); color: #ffffff; border-radius: 6px;">
+                </div>
+                <div class="form-group" style="margin-bottom: 0.9rem;">
+                    <label for="magnet-email" style="display: block; font-size: 0.75rem; font-family: var(--font-mono); color: #cbd5e1; margin-bottom: 0.35rem;">WORK EMAIL ADDRESS *</label>
                     <input type="email" id="magnet-email" name="Work Email" class="cyber-input" placeholder="ciso@enterprise.com" required style="width: 100%; padding: 0.6rem 0.8rem; background: rgba(3, 7, 18, 0.8); border: 1px solid rgba(0, 240, 255, 0.4); color: #ffffff; border-radius: 6px;">
                 </div>
+                <div class="form-group" style="margin-bottom: 0.9rem;">
+                    <label for="magnet-phone" style="display: block; font-size: 0.75rem; font-family: var(--font-mono); color: #cbd5e1; margin-bottom: 0.35rem;">PHONE / WHATSAPP NUMBER *</label>
+                    <input type="tel" id="magnet-phone" name="Phone Number" class="cyber-input" placeholder="+1 / +91 ..." required style="width: 100%; padding: 0.6rem 0.8rem; background: rgba(3, 7, 18, 0.8); border: 1px solid rgba(0, 240, 255, 0.4); color: #ffffff; border-radius: 6px;">
+                </div>
+                <div class="form-group" style="margin-bottom: 0.9rem;">
+                    <label for="magnet-company" style="display: block; font-size: 0.75rem; font-family: var(--font-mono); color: #cbd5e1; margin-bottom: 0.35rem;">COMPANY / ORGANIZATION NAME *</label>
+                    <input type="text" id="magnet-company" name="Company Name" class="cyber-input" placeholder="Enterprise Corp" required style="width: 100%; padding: 0.6rem 0.8rem; background: rgba(3, 7, 18, 0.8); border: 1px solid rgba(0, 240, 255, 0.4); color: #ffffff; border-radius: 6px;">
+                </div>
                 <div class="form-group" style="margin-bottom: 1.25rem;">
-                    <label for="magnet-company" style="display: block; font-size: 0.75rem; font-family: var(--font-mono); color: #cbd5e1; margin-bottom: 0.4rem;">ORGANIZATION NAME *</label>
-                    <input type="text" id="magnet-company" name="Company" class="cyber-input" placeholder="Enterprise Corp" required style="width: 100%; padding: 0.6rem 0.8rem; background: rgba(3, 7, 18, 0.8); border: 1px solid rgba(0, 240, 255, 0.4); color: #ffffff; border-radius: 6px;">
+                    <label for="magnet-title" style="display: block; font-size: 0.75rem; font-family: var(--font-mono); color: #cbd5e1; margin-bottom: 0.35rem;">JOB TITLE / ROLE *</label>
+                    <input type="text" id="magnet-title" name="Job Title" class="cyber-input" placeholder="e.g. Chief Information Security Officer" required style="width: 100%; padding: 0.6rem 0.8rem; background: rgba(3, 7, 18, 0.8); border: 1px solid rgba(0, 240, 255, 0.4); color: #ffffff; border-radius: 6px;">
                 </div>
 
                 <button type="submit" class="btn-cyber-cyan w-100" style="padding: 0.75rem; font-weight: 700; width: 100%;">
