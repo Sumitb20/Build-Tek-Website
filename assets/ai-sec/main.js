@@ -379,7 +379,7 @@
                     return `
                         <div class="speaker-card speaker-announced">
                             <div class="speaker-avatar">
-                                ${sp.photo ? `<img src="${sp.photo}" alt="${sp.name}" loading="lazy" decoding="async">` : `<div class="avatar-placeholder">${sp.name.charAt(0)}</div>`}
+                                ${sp.photo ? `<img src="${sp.photo}" alt="${sp.name}" width="88" height="88" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover; object-position: center top; border-radius: 50%; display: block;">` : `<div class="avatar-placeholder">${sp.name.charAt(0)}</div>`}
                             </div>
                             <span class="speaker-announced-tag" style="${tagStyle}">${sp.sessionRole || 'CONFIRMED FACULTY'}</span>
                             <h4 style="font-size: 1.25rem; margin: 0.5rem 0 0.2rem; color: #fff;">${sp.name}</h4>
