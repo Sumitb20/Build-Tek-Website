@@ -807,7 +807,7 @@
 
     <!-- SCRIPTS -->
     <script src="./assets/ai-sec/config.js"></script>
-    <script src="./assets/ai-sec/main.js"></script>
+    <script src="./assets/ai-sec/main.js?v=20261125-2"></script>
     <script>
         (function () {
             const form = document.getElementById('summit-reg-form');
@@ -853,13 +853,12 @@
                 });
             });
 
-            // 2. Validate email domain
+            // 2. Validate email domain (strict corporate email only)
             function validateEmailDomain() {
-                const isStandard = document.getElementById('radio-standard').checked;
                 const emailVal = (emailInput.value || '').trim().toLowerCase();
                 const domain = emailVal.split('@')[1] || '';
 
-                if (!isStandard && freeDomains.includes(domain)) {
+                if (domain && freeDomains.includes(domain)) {
                     freeEmailWarning.style.display = 'block';
                     return false;
                 } else {
@@ -897,7 +896,7 @@
             updatePassVisuals();
 
             // 5. Form Submission
-            form.addEventListener('submit', function (e) {
+            form.addEventListener('submit', async function (e) {
                 e.preventDefault();
 
                 // Honeypot check
@@ -920,6 +919,19 @@
                 }
 
                 submitBtn.disabled = true;
+                submitBtn.innerText = "VERIFYING EMAIL & PHONE...";
+
+                // Strict MX + Phone verification
+                if (window.aiSecVerifyLead) {
+                    const verified = await window.aiSecVerifyLead.verifyFormInputs(form);
+                    if (!verified) {
+                        submitBtn.disabled = false;
+                        const isStandardCheck = document.getElementById('radio-standard').checked;
+                        submitBtn.innerText = isStandardCheck ? "PROCEED TO PAYMENT ($199 USD) →" : "SUBMIT APPLICATION FOR VETTING →";
+                        return;
+                    }
+                }
+
                 submitBtn.innerText = "TRANSMITTING APPLICATION...";
 
                 const isStandard = document.getElementById('radio-standard').checked;

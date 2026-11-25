@@ -484,22 +484,43 @@
         }
 
         if (magnetForm) {
-            magnetForm.addEventListener('submit', (e) => {
+            magnetForm.addEventListener('submit', async (e) => {
                 e.preventDefault();
+
+                if (!magnetForm.checkValidity()) {
+                    magnetForm.reportValidity();
+                    return;
+                }
+
+                const submitBtn = magnetForm.querySelector('button[type="submit"]');
+                const origText = submitBtn ? submitBtn.textContent : '';
+                if (submitBtn) {
+                    submitBtn.disabled = true;
+                    submitBtn.textContent = 'VERIFYING EMAIL & NUMBER...';
+                }
+
+                const isVerified = await window.aiSecVerifyLead.verifyFormInputs(magnetForm);
+                if (!isVerified) {
+                    if (submitBtn) {
+                        submitBtn.disabled = false;
+                        submitBtn.textContent = origText;
+                    }
+                    return;
+                }
+
                 const emailInput = magnetForm.querySelector('input[type="email"]');
                 const workEmail = emailInput ? emailInput.value.trim() : '';
-
-                if (!workEmail) return;
 
                 window.aiSecTrack('report_download', {
                     report_tier: 'free_summary',
                     email: workEmail
                 });
 
-                // Simulate/submit to endpoint
+                // Submit verified lead to endpoint
                 const endpoint = (CFG.forms && CFG.forms.leadMagnetEndpoint) || 'https://formsubmit.co/sumit@buildtekevents.com';
                 const formData = new FormData(magnetForm);
                 formData.append('Lead_Magnet', '2027 AI Threat Matrix Executive Summary');
+                formData.append('Verification_Status', 'Work Email MX + Phone Verified');
 
                 fetch(endpoint, {
                     method: 'POST',
@@ -511,6 +532,42 @@
                     magnetForm.style.display = 'none';
                     magnetSuccess.style.display = 'block';
                 }
+            });
+        }
+
+        // ==========================================================================
+        // 09B — PARTNER FORM VERIFICATION (#partner-portal-form)
+        // ==========================================================================
+        const partnerForm = document.getElementById('partner-portal-form');
+        if (partnerForm) {
+            let partnerVerifiedSubmitting = false;
+            partnerForm.addEventListener('submit', async (e) => {
+                if (partnerVerifiedSubmitting) return;
+                e.preventDefault();
+
+                if (!partnerForm.checkValidity()) {
+                    partnerForm.reportValidity();
+                    return;
+                }
+
+                const submitBtn = partnerForm.querySelector('button[type="submit"]');
+                const origText = submitBtn ? submitBtn.textContent : '';
+                if (submitBtn) {
+                    submitBtn.disabled = true;
+                    submitBtn.textContent = 'VERIFYING EMAIL & NUMBER...';
+                }
+
+                const isVerified = await window.aiSecVerifyLead.verifyFormInputs(partnerForm);
+                if (!isVerified) {
+                    if (submitBtn) {
+                        submitBtn.disabled = false;
+                        submitBtn.textContent = origText;
+                    }
+                    return;
+                }
+
+                partnerVerifiedSubmitting = true;
+                partnerForm.submit();
             });
         }
 
@@ -810,6 +867,153 @@
             });
         }
     }
+
+    // ==========================================================================
+    // LEAD VERIFICATION ENGINE (VERIFIED WORK EMAIL + MX + PHONE NUMBER)
+    // ==========================================================================
+    window.aiSecVerifyLead = (function () {
+        const BLOCKED_DOMAINS = new Set([
+            'gmail.com', 'googlemail.com', 'yahoo.com', 'yahoo.co.in', 'yahoo.co.uk',
+            'ymail.com', 'rocketmail.com', 'hotmail.com', 'outlook.com', 'live.com',
+            'msn.com', 'icloud.com', 'me.com', 'mac.com', 'aol.com', 'proton.me',
+            'protonmail.com', 'pm.me', 'tutanota.com', 'zoho.com', 'yandex.com',
+            'yandex.ru', 'rediffmail.com', 'mail.com', 'gmx.com', 'gmx.net',
+            'mailinator.com', 'guerrillamail.com', 'tempmail.com', 'temp-mail.org',
+            '10minutemail.com', 'yopmail.com', 'sharklasers.com', 'throwawaymail.com',
+            'trashmail.com', 'getnada.com', 'dispostable.com', 'fakeinbox.com',
+            'maildrop.cc', 'example.com', 'test.com'
+        ]);
+
+        function showError(input, message) {
+            if (!input) return;
+            clearError(input);
+            input.dataset.origBorder = input.style.borderColor || '';
+            input.style.borderColor = '#ef4444';
+            const err = document.createElement('div');
+            err.className = 'aisec-field-error';
+            err.setAttribute('role', 'alert');
+            err.style.cssText = 'color:#f87171;font-size:0.78rem;margin-top:0.35rem;font-family:var(--font-mono,monospace);line-height:1.35;';
+            err.textContent = '⚠ ' + message;
+            input.parentNode.appendChild(err);
+            input.addEventListener('input', () => clearError(input), { once: true });
+        }
+
+        function clearError(input) {
+            if (!input || !input.parentNode) return;
+            if (input.dataset.origBorder !== undefined) {
+                input.style.borderColor = input.dataset.origBorder;
+            }
+            const existing = input.parentNode.querySelector('.aisec-field-error');
+            if (existing) existing.remove();
+        }
+
+        function validateEmailFormat(email) {
+            const val = (email || '').trim().toLowerCase();
+            if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(val)) {
+                return { valid: false, reason: 'Please enter a valid email address.' };
+            }
+            const domain = val.split('@')[1];
+            if (BLOCKED_DOMAINS.has(domain)) {
+                return { valid: false, reason: 'Please use a verified corporate/work email (personal or temporary emails like Gmail/Yahoo/Mailinator are not accepted).' };
+            }
+            return { valid: true, domain };
+        }
+
+        async function verifyEmailMX(domain) {
+            const controller = new AbortController();
+            const timer = setTimeout(() => controller.abort(), 2500);
+            try {
+                const resp = await fetch(`https://cloudflare-dns.com/dns-query?name=${encodeURIComponent(domain)}&type=MX`, {
+                    headers: { 'Accept': 'application/dns-json' },
+                    signal: controller.signal
+                });
+                clearTimeout(timer);
+                if (!resp.ok) return { valid: true, skipped: true };
+                const data = await resp.json();
+                if (data.Status !== 0 || !Array.isArray(data.Answer) || data.Answer.length === 0) {
+                    return { valid: false, reason: `Domain "${domain}" has no active mail server (MX record). Please enter a real corporate email.` };
+                }
+                return { valid: true };
+            } catch (_) {
+                clearTimeout(timer);
+                return { valid: true, skipped: true };
+            }
+        }
+
+        function validatePhone(raw) {
+            const val = (raw || '').trim();
+            if (!val) return { valid: false, reason: 'Phone / WhatsApp number is required.' };
+            if (/[a-zA-Z]/.test(val)) {
+                return { valid: false, reason: 'Phone number must contain digits only (with optional + country code).' };
+            }
+            const cleaned = val.replace(/[\s\-().]/g, '');
+            const hasPlus = cleaned.startsWith('+');
+            const digits = hasPlus ? cleaned.slice(1) : cleaned;
+
+            if (!/^\d{8,15}$/.test(digits)) {
+                return { valid: false, reason: 'Enter a valid phone number with country code (8–15 digits, e.g. +91 98765 43210).' };
+            }
+            // Reject repeated single digit (e.g. 0000000000, 9999999999)
+            if (/^(\d)\1+$/.test(digits)) {
+                return { valid: false, reason: 'Please enter a real, reachable phone number.' };
+            }
+            // Reject repeated 2-digit patterns (e.g. 1212121212)
+            if (/^(\d{2})\1{3,}$/.test(digits)) {
+                return { valid: false, reason: 'Please enter a real, reachable phone number.' };
+            }
+            // Reject sequential fake runs
+            const seq = '01234567890123456789';
+            const revSeq = '98765432109876543210';
+            if (seq.includes(digits.slice(0, 8)) || revSeq.includes(digits.slice(0, 8))) {
+                return { valid: false, reason: 'Sequential numbers like 1234567890 are not allowed. Enter a valid phone number.' };
+            }
+            // India (+91 or 10-digit local starting 0-5)
+            if ((digits.startsWith('91') && digits.length === 12 && !/^[6-9]/.test(digits.slice(2))) ||
+                (!hasPlus && digits.length === 10 && /^[0-5]/.test(digits))) {
+                return { valid: false, reason: 'Please enter a valid mobile number (or include your international + country code).' };
+            }
+            // US/CA (+1) 555-01xx fake range
+            if (digits.startsWith('1') && digits.length === 11 && /^1\d{3}55501/.test(digits)) {
+                return { valid: false, reason: 'Please enter a real phone number.' };
+            }
+            return { valid: true };
+        }
+
+        async function verifyFormInputs(form) {
+            const emailInput = form.querySelector('input[type="email"]');
+            const phoneInput = form.querySelector('input[type="tel"]');
+
+            if (emailInput) {
+                clearError(emailInput);
+                const fmt = validateEmailFormat(emailInput.value);
+                if (!fmt.valid) {
+                    showError(emailInput, fmt.reason);
+                    emailInput.focus();
+                    return false;
+                }
+                const mx = await verifyEmailMX(fmt.domain);
+                if (!mx.valid) {
+                    showError(emailInput, mx.reason);
+                    emailInput.focus();
+                    return false;
+                }
+            }
+
+            if (phoneInput) {
+                clearError(phoneInput);
+                const ph = validatePhone(phoneInput.value);
+                if (!ph.valid) {
+                    showError(phoneInput, ph.reason);
+                    phoneInput.focus();
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
+        return { validateEmailFormat, verifyEmailMX, validatePhone, showError, clearError, verifyFormInputs };
+    })();
 
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', initSummit);
